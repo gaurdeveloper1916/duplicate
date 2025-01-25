@@ -192,9 +192,10 @@ const StatisticsSection = ({
                     key={index}
                     className={`usp-ct ${["one", "two", "three"][index]}`}
                   >
-                    <span className="serif">{stat.value}</span>
                     <span>{stat.label1}</span>
                     <span>{stat.label2}</span>
+                    <span className="serif"><p className="fs-2">{stat.value}</p></span>
+
                   </div>
                 ))}
 

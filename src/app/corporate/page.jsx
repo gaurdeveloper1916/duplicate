@@ -9,6 +9,10 @@ import SectionThree from "@/app/component/corporate/v2.1/components/SectionThree
 import Header from "../component/common/header/Header";
 import "./styles.css";
 import StatisticsSection from "@/app/component/StatisticsSection";
+import SectionOne from "../component/corporate/v2.1/components/SectionOne";
+import SectionTwo from "../component/corporate/v2.1/components/SectionTwo";
+import SectionFour from "../component/corporate/v2.1/components/SectionFour";
+import SectionFive from "../component/corporate/v2.1/components/SectionFive";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -87,16 +91,27 @@ const CorporatePage = () => {
   return (
     <section className="min-vh-100">
       <Header />
-      <SectionThree />
+      <SectionOne/>
+      <SectionTwo/>
+      <SectionThree/>
+      <SectionFour/>
+      <StatisticsSection
+        statistics={[
+          { value: "At Demigod House, we champion global humanitarian causes and combat climate change through impactful fundraising and charity initiatives. Together, we drive meaningful change for a sustainable and compassionate future.", label1: "1 Charity and", label2: "and Fundraising Events" },
+          { value: "At Demigod House, we champion global humanitarian causes and combat climate change through impactful fundraising and charity initiatives. Together, we drive meaningful change for a sustainable and compassionate future.", label1: "1 Charity and", label2: "and Fundraising Events" },
+          { value: "At Demigod House, we champion global humanitarian causes and combat climate change through impactful fundraising and charity initiatives. Together, we drive meaningful change for a sustainable and compassionate future.", label1: "1 Charity and", label2: "and Fundraising Events" },
+        ]}
+      />
+      <SectionFive/>
+     
       {/* <SectionSix /> */}
       <StatisticsSection
         statistics={[
-          { value: "1M+++++++", label1: "Active", label2: "Users" },
-          { value: "200K", label1: "Daily", label2: "Visits" },
-          { value: "99%", label1: "Customer", label2: "Satisfaction" },
+          { value: "At Demigod House, we champion global humanitarian causes and combat climate change through impactful fundraising and charity initiatives. Together, we drive meaningful change for a sustainable and compassionate future.", label1: "2 Charity and", label2: "and Fundraising Events" },
+          { value: "At Demigod House, we champion global humanitarian causes and combat climate change through impactful fundraising and charity initiatives. Together, we drive meaningful change for a sustainable and compassionate future.", label1: "2 Charity and", label2: "and Fundraising Events" },
+          { value: "At Demigod House, we champion global humanitarian causes and combat climate change through impactful fundraising and charity initiatives. Together, we drive meaningful change for a sustainable and compassionate future.", label1: "2 Charity and", label2: "and Fundraising Events" },
         ]}
       />
-
       <SectionSeven />
     </section>
   );
